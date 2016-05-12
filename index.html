@@ -2,9 +2,29 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Loaders - Plugin JQuery</title>
+	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
+	<div class="loader"></div>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="assets/js/jquery.loaders.js"></script>
+	<script>
+		$(function(){
+			$('.loader').Loaders({
+				theme: 'defaut',
+				speed: 500,
+				duration: 'infinite',
+				css: {
+					width: '100px',
+					height: '100px',
+					backgroundColor: '#C00'
+				}
+			});
+		});
+	</script>
 </body>
 </html>
